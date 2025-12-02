@@ -107,25 +107,207 @@ using namespace std;
 
 
 
-// 左移运算符的重载
-class Person {
+// // 左移运算符的重载
+// class Person {
+// public: 
+//     int A; 
+//     int B; 
+// }; 
+
+// void test01() {
+
+//     Person p1; 
+//     p1.A = 10; 
+//     p1.B = 20; 
+//     cout << p1.A << " " << p1.B << endl;  
+// }
+
+// int main() {
+//     test01(); 
+//     return 0; 
+// }
+
+// // 递增运算符重载
+// class MyInterger { 
+//     friend ostream& operator<<(ostream& cout, MyInterger m); 
+// public: 
+//     MyInterger() {
+//         num = 0; 
+//     }
+// private: 
+//     int num; 
+// }; 
+
+// // 重载左移运算符,输出对象 
+// ostream& operator<<(ostream& cout, MyInterger m) {
+//     cout << m.num; 
+//     return cout; 
+// }
+
+// void test01() {
+//     MyInterger m; 
+//     cout << m << endl; 
+// }  
+// int main() {
+//     test01(); 
+//     return 0; 
+// }
+
+
+
+
+// // 递增运算符重载
+// class MyInterger { 
+//     friend ostream& operator<<(ostream& cout, MyInterger m); 
+// public: 
+//     MyInterger() {
+//         num = 0; 
+//     }
+// private: 
+//     int num; 
+// }; 
+
+// // 重载左移运算符,输出对象 
+// ostream& operator<<(ostream& cout, MyInterger m) {
+//     cout << m.num; 
+//     return cout; 
+// }
+
+// void test01() {
+//     MyInterger m; 
+//     cout << ++m << endl;  // error
+// }  
+// int main() {
+//     test01(); 
+//     return 0; 
+// }
+
+
+// // 重置前置 ++ 
+// // 递增运算符重载
+// class MyInterger { 
+//     friend ostream& operator<<(ostream& cout, MyInterger m); 
+// public: 
+//     MyInterger() {
+//         num = 0; 
+//     }  
+//     MyInterger& operator++() {
+//         num++; 
+//         return *this; 
+//     }
+// private: 
+//     int num; 
+// }; 
+
+// // 重载左移运算符,输出对象 
+// ostream& operator<<(ostream& cout, MyInterger m) {
+//     cout << m.num << endl;  
+//     return cout; 
+// }
+
+// void test01() {
+//     MyInterger m; 
+//     cout << ++m << endl;  
+// }  
+// int main() {
+//     test01(); 
+//     return 0; 
+// }
+
+
+// 重置前置 ++ 
+// // 递增运算符重载
+// class MyInterger { 
+//     friend ostream& operator<<(ostream& cout, MyInterger m); 
+// public: 
+//     MyInterger() {
+//         num = 0; 
+//     }  
+//     MyInterger operator++() {
+//         num++; 
+//         return *this; 
+//     }
+// private: 
+//     int num; 
+// }; 
+// // 重载左移运算符,输出对象 
+// ostream& operator<<(ostream& cout, MyInterger m) {
+//     cout << m.num << endl;  
+//     return cout; 
+// }
+// void test01() {
+//     MyInterger m; 
+//     cout <<++ (++m) << endl;   // 2 
+//     cout << m << endl;  // 1
+// }  
+// int main() {
+//     test01(); 
+//     return 0; 
+// } 
+
+
+
+
+// // 递增运算符重载
+// // 重载后置 ++
+// class MyInterger { 
+//     friend ostream& operator<<(ostream& cout, MyInterger m); 
+// public: 
+//     MyInterger() {
+//         num = 0; 
+//     }  
+//     // 重载后置 ++ ,void operator++(int)  int代表占位参数,可以用于区分前置和后置递增
+//     void operator++(int) {
+//         num++; 
+//     }
+// private: 
+//     int num; 
+// }; 
+// // 重载左移运算符,输出对象 
+// ostream& operator<<(ostream& cout, MyInterger m) {
+//     cout << m.num << endl;  
+//     return cout; 
+// }
+// void test01() {
+//     MyInterger m; 
+//     cout << ++(++m) << endl;    
+//     cout << m << endl; 
+// }  
+// int main() {
+//     test01(); 
+//     return 0; 
+// } 
+
+
+
+// 递增运算符重载
+// 重载后置 ++
+class MyInterger { 
+    friend ostream& operator<<(ostream& cout, MyInterger m); 
 public: 
-    int A; 
-    int B; 
+    MyInterger() {
+        num = 0; 
+    }  
+    // 重载后置 ++ ,void operator++(int)  int代表占位参数,可以用于区分前置和后置递增
+    MyInterger operator++(int) { 
+        MyInterger temp = *this; 
+        num++; 
+        return temp; 
+    }
+private: 
+    int num; 
 }; 
-
-
-
-void test01() {
-
-    Person p1; 
-    p1.A = 10; 
-    p1.B = 20; 
-    cout << p1.A << " " << p1.B << endl;  
+// 重载左移运算符,输出对象 
+ostream& operator<<(ostream& cout, MyInterger m) {
+    cout << m.num << endl;  
+    return cout; 
 }
-
-
+void test01() {
+    MyInterger m; 
+    cout << m++ << endl;    // 0
+    cout << m << endl;  // 1
+}  
 int main() {
     test01(); 
     return 0; 
-}
+} 
