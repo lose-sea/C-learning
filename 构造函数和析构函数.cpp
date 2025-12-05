@@ -2,40 +2,40 @@
 using namespace std; 
 // class Person {
 // public : 
-// // ÎŞ²Î¹¹Ôì
+// // æ— å‚æ„é€ 
 //     Person() {
-//         cout << "ÎŞ²Î¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+//         cout << "æ— å‚æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
 //     } 
-// // ÓĞ²Î¹¹Ôì 
+// // æœ‰å‚æ„é€  
 //     Person(int n) { 
 //         age = n; 
-//         cout << "ÓĞ²Î¹¹Ôìº¯Êıµ÷ÓÃ" << endl;  
+//         cout << "æœ‰å‚æ„é€ å‡½æ•°è°ƒç”¨" << endl;  
 //     } 
-// // ¿½±´¹¹Ôìº¯Êı
+// // æ‹·è´æ„é€ å‡½æ•°
 //     Person (const Person& p) { 
-//         cout << "¿½±´¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+//         cout << "æ‹·è´æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
 //         age = p.age; 
 //     }
 //     int age = 0; 
-// // Îö¹¹º¯Êı
+// // ææ„å‡½æ•°
 //     ~Person() {
-//         cout << "Îö¹¹º¯Êıµ÷ÓÃ" << endl;  
+//         cout << "ææ„å‡½æ•°è°ƒç”¨" << endl;  
 //     }
 // }; 
 
 // int main() {
-//     // µ÷ÓÃ
-//     // À¨ºÅ·¨ 
-//     // Person p1;  // Ä¬ÈÏ¹¹Ôìº¯ÊıµÄµ÷ÓÃ 
-//     // Person p2(10);  // ÓĞ²Î¹¹Ôìº¯Êıµ÷ÓÃ 
-//     // Person p3(p2);  // ¿½±´¹¹Ôìº¯Êıµ÷ÓÃ 
+//     // è°ƒç”¨
+//     // æ‹¬å·æ³• 
+//     // Person p1;  // é»˜è®¤æ„é€ å‡½æ•°çš„è°ƒç”¨ 
+//     // Person p2(10);  // æœ‰å‚æ„é€ å‡½æ•°è°ƒç”¨ 
+//     // Person p3(p2);  // æ‹·è´æ„é€ å‡½æ•°è°ƒç”¨ 
 //     // cout << p3.age << endl;  // 10
-//     // ÏÔÊ¾·¨
-//     // Person p1 = Person(10); // ÓĞ²Î¹¹Ôìº¯Êıµ÷ÓÃ  
-//     // Person p2 = Person(p1); // ¿½±´¹¹Ôìº¯Êıµ÷ÓÃ  
-//     // Person(10);   // ÄäÃû¶ÔÏó
-//     // ÒşÊ½×ª»»·¨ 
-//     Person p = 10;  // Ïàµ±ÓÚĞ´ÁË Person p = Person(10); 
+//     // æ˜¾ç¤ºæ³•
+//     // Person p1 = Person(10); // æœ‰å‚æ„é€ å‡½æ•°è°ƒç”¨  
+//     // Person p2 = Person(p1); // æ‹·è´æ„é€ å‡½æ•°è°ƒç”¨  
+//     // Person(10);   // åŒ¿åå¯¹è±¡
+//     // éšå¼è½¬æ¢æ³• 
+//     Person p = 10;  // ç›¸å½“äºå†™äº† Person p = Person(10); 
 //     return 0; 
 // }
 
@@ -43,22 +43,22 @@ using namespace std;
 // class Person {
 // public: 
 //     Person() {
-//         cout << "Ä¬ÈÏ¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+//         cout << "é»˜è®¤æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
 //     }  
 //     Person(int n) { 
 //         age = n; 
-//         cout << "ÓĞ²Î¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+//         cout << "æœ‰å‚æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
 //     }  
 //     int age;
 //     ~Person() {
-//         cout << "Îö¹¹º¯Êıµ÷ÓÃ" << endl; 
+//         cout << "ææ„å‡½æ•°è°ƒç”¨" << endl; 
 //     } 
 // }; 
 // int main() {
 //     Person p1(18);  
 //     cout << p1.age << endl; 
 //     Person p2(p1); 
-//     cout << p2.age << endl; // ±àÒëÆ÷Ìá¹©Ä¬ÈÏ¿½±´¹¹Ôìº¯Êı
+//     cout << p2.age << endl; // ç¼–è¯‘å™¨æä¾›é»˜è®¤æ‹·è´æ„é€ å‡½æ•°
 //     return 0; 
 // }
 
@@ -69,21 +69,21 @@ using namespace std;
 // class Person {
 // public: 
 //     Person() {
-//         cout << "Ä¬ÈÏ¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+//         cout << "é»˜è®¤æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
 //     }  
 //     Person(int n, int h) { 
 //         age = n; 
 //         height = new int(h); 
-//         cout << "ÓĞ²Î¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+//         cout << "æœ‰å‚æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
 //     }  
 //     int age;
 //     int* height; 
-//     ~Person() { // Îö¹¹´úÂë,½«¶ÑÇø¿ª±ÙµÄÊı¾İÊÍ·Å 
+//     ~Person() { // ææ„ä»£ç ,å°†å †åŒºå¼€è¾Ÿçš„æ•°æ®é‡Šæ”¾ 
 //         if (height != NULL) {
 //             delete height; 
 //             height = NULL; 
 //         }
-//         cout << "Îö¹¹º¯Êıµ÷ÓÃ" << endl; 
+//         cout << "ææ„å‡½æ•°è°ƒç”¨" << endl; 
 //     } 
 // }; 
 // int main() {
@@ -100,30 +100,30 @@ using namespace std;
 class Person {
 public: 
     Person() {
-        cout << "Ä¬ÈÏ¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+        cout << "é»˜è®¤æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
     }  
     Person(int n, int h) { 
         age = n; 
         height = new int(h); 
-        cout << "ÓĞ²Î¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+        cout << "æœ‰å‚æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
     }   
 
-    //×Ô¼ºÊµÏÖ¿½±´¹¹Ôìº¯Êı,½â¾öÇ³¿½±´´øÀ´µÄÎÊÌâ
+    //è‡ªå·±å®ç°æ‹·è´æ„é€ å‡½æ•°,è§£å†³æµ…æ‹·è´å¸¦æ¥çš„é—®é¢˜
     Person (const Person& p) {
-        cout << "ÓĞ²Î¹¹Ôìº¯Êıµ÷ÓÃ" << endl; 
+        cout << "æœ‰å‚æ„é€ å‡½æ•°è°ƒç”¨" << endl; 
         age = p.age; 
-        height = p.height;   // ±àÒëÆ÷Ä¬ÈÏÊµÏÖµÄ¾ÍÊÇÕâĞĞ´úÂë
-        // Éî¿½±´²Ù×÷
+        height = p.height;   // ç¼–è¯‘å™¨é»˜è®¤å®ç°çš„å°±æ˜¯è¿™è¡Œä»£ç 
+        // æ·±æ‹·è´æ“ä½œ
         height = new int(*p.height); 
     } 
     int age;
     int* height; 
-    ~Person() { // Îö¹¹´úÂë,½«¶ÑÇø¿ª±ÙµÄÊı¾İÊÍ·Å 
+    ~Person() { // ææ„ä»£ç ,å°†å †åŒºå¼€è¾Ÿçš„æ•°æ®é‡Šæ”¾ 
         if (height != NULL) {
             delete height; 
             height = NULL; 
         }
-        cout << "Îö¹¹º¯Êıµ÷ÓÃ" << endl; 
+        cout << "ææ„å‡½æ•°è°ƒç”¨" << endl; 
     }  
 };  
 int main() {
