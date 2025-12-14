@@ -1,5 +1,6 @@
 #include<iostream>  
 #include<string> 
+#include<algorithm>
 #include<ctime>
 using namespace std; 
 // struct student {
@@ -71,29 +72,29 @@ int main() {
 
 
 
-struct hero {
-    string name; 
-    int age; 
-    string sex; 
-}; 
-bool cmp(hero e1, hero e2) {
-    return e1.age <e2.age; 
-}
-// 打印函数
-void printhero(hero h[], int len) {
-    for (int i = 0; i < len; i++) {
-        cout << h[i].name << "\t" <<  h[i].age << "\t" << h[i].sex << endl; 
-    }
-}
-int main() {
-    hero h[5] = {
-        {"zhangfei", 21, "nan"}, 
-        {"diaochan", 18, "nv"}, 
-        {"lvbu", 26, "nan"}, 
-        {"liuchan", 14, "nan"}, 
-        {"guanyu", 24, "nan"}
-    }; 
-    sort(h, h + 5, cmp); 
-    printhero(h, 5); 
-    return 0; 
-}
+// struct hero {
+//     string name; 
+//     int age; 
+//     string sex; 
+// }; 
+// bool cmp(hero e1, hero e2) {
+//     return e1.age <e2.age; 
+// }
+// // 打印函数
+// void printhero(hero h[], int len) {
+//     for (int i = 0; i < len; i++) {
+//         cout << h[i].name << "\t" <<  h[i].age << "\t" << h[i].sex << endl; 
+//     }
+// }
+// int main() {
+//     hero h[5] = {
+//         {"zhangfei", 21, "nan"}, 
+//         {"diaochan", 18, "nv"}, 
+//         {"lvbu", 26, "nan"}, 
+//         {"liuchan", 14, "nan"}, 
+//         {"guanyu", 24, "nan"}
+//     }; 
+//     sort(h, h + 5, cmp); 
+//     printhero(h, 5); 
+//     return 0; 
+// }
