@@ -280,34 +280,71 @@ using namespace std;
 
 
 
-// 递增运算符重载
-// 重载后置 ++
-class MyInterger { 
-    friend ostream& operator<<(ostream& cout, MyInterger m); 
+// // 递增运算符重载
+// // 重载后置 ++
+// class MyInterger { 
+//     friend ostream& operator<<(ostream& cout, MyInterger m); 
+// public: 
+//     MyInterger() {
+//         num = 0; 
+//     }  
+//     // 重载后置 ++ ,void operator++(int)  int代表占位参数,可以用于区分前置和后置递增
+//     MyInterger operator++(int) { 
+//         MyInterger temp = *this; 
+//         num++; 
+//         return temp; 
+//     }
+// private: 
+//     int num; 
+// }; 
+// // 重载左移运算符,输出对象 
+// ostream& operator<<(ostream& cout, MyInterger m) {
+//     cout << m.num << endl;  
+//     return cout; 
+// }
+// void test01() {
+//     MyInterger m; 
+//     cout << m++ << endl;    // 0
+//     cout << m << endl;  // 1
+// }  
+// int main() {
+//     test01(); 
+//     return 0; 
+// }  
+
+
+
+
+// 递增运算符的重载
+class MyInteger {
 public: 
-    MyInterger() {
-        num = 0; 
-    }  
-    // 重载后置 ++ ,void operator++(int)  int代表占位参数,可以用于区分前置和后置递增
-    MyInterger operator++(int) { 
-        MyInterger temp = *this; 
-        num++; 
-        return temp; 
+    MyInteger() {
+        m_num = 0; 
+    } 
+
+    // 重载++运算符 
+    // 前置++ 
+    // 返回引用是为了对一个对象进行操作
+    MyInteger& operator++() {
+        m_num++; 
+        return *this; 
     }
-private: 
-    int num; 
+
+    int m_num;  
+
+    MyInteger(int x) : m_num(x) {} 
 }; 
-// 重载左移运算符,输出对象 
-ostream& operator<<(ostream& cout, MyInterger m) {
-    cout << m.num << endl;  
+
+
+// 重载左移运算符
+ostream& operator<<(ostream& cout, MyInteger s) {
+    cout << s.m_num << endl; 
     return cout; 
-}
-void test01() {
-    MyInterger m; 
-    cout << m++ << endl;    // 0
-    cout << m << endl;  // 1
-}  
-int main() {
-    test01(); 
-    return 0; 
 } 
+
+int main() {
+
+    MyInteger s(46); 
+    cout << ++s << endl; 
+    return 0; 
+}
