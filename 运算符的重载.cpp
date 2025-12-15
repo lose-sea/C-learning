@@ -330,9 +330,17 @@ public:
         return *this; 
     }
 
+    // 重载后置++
+    MyInteger operator++(int) {
+        MyInteger temp = *this; 
+        m_num++;  
+        return temp; 
+    }
+
+
     int m_num;  
 
-    MyInteger(int x) : m_num(x) {} 
+    MyInteger(int x = 0) : m_num(x) {} 
 }; 
 
 
@@ -348,3 +356,5 @@ int main() {
     cout << ++s << endl; 
     return 0; 
 }
+
+
