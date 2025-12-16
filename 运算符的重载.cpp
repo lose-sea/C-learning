@@ -1,7 +1,7 @@
 #include<iostream> 
 using namespace std; 
 
-// // é€šè¿‡æˆå‘˜å‡½æ•°é‡è½½+è¿ç®—ç¬¦
+// // Í¨¹ı³ÉÔ±º¯ÊıÖØÔØ+ÔËËã·û
 // class Person { 
 // public: 
 //     Person operator+(Person p) {
@@ -28,7 +28,7 @@ using namespace std;
 //     return 0; 
 // }
 
-// // é€šè¿‡å…¨å±€å‡½æ•°é‡è½½+è¿ç®—ç¬¦
+// // Í¨¹ıÈ«¾Öº¯ÊıÖØÔØ+ÔËËã·û
 // class Person { 
 // public: 
 //     int A; 
@@ -66,7 +66,7 @@ using namespace std;
 // Person p3 = p1 + 10; // Person + int
 
 
-// // é€šè¿‡å…¨å±€å‡½æ•°é‡è½½+è¿ç®—ç¬¦
+// // Í¨¹ıÈ«¾Öº¯ÊıÖØÔØ+ÔËËã·û
 // class Person { 
 // public: 
 //     int A; 
@@ -81,7 +81,7 @@ using namespace std;
 //     return temp; 
 // } 
 
-// // å‡½æ•°é‡è½½çš„ç‰ˆæœ¬
+// // º¯ÊıÖØÔØµÄ°æ±¾
 // Person operator+(Person p, int x) {
 //     p.A += x; 
 //     p.B += x; 
@@ -107,7 +107,7 @@ using namespace std;
 
 
 
-// // å·¦ç§»è¿ç®—ç¬¦çš„é‡è½½
+// // ×óÒÆÔËËã·ûµÄÖØÔØ
 // class Person {
 // public: 
 //     int A; 
@@ -127,7 +127,7 @@ using namespace std;
 //     return 0; 
 // }
 
-// // é€’å¢è¿ç®—ç¬¦é‡è½½
+// // µİÔöÔËËã·ûÖØÔØ
 // class MyInterger { 
 //     friend ostream& operator<<(ostream& cout, MyInterger m); 
 // public: 
@@ -138,7 +138,7 @@ using namespace std;
 //     int num; 
 // }; 
 
-// // é‡è½½å·¦ç§»è¿ç®—ç¬¦,è¾“å‡ºå¯¹è±¡ 
+// // ÖØÔØ×óÒÆÔËËã·û,Êä³ö¶ÔÏó 
 // ostream& operator<<(ostream& cout, MyInterger m) {
 //     cout << m.num; 
 //     return cout; 
@@ -156,7 +156,7 @@ using namespace std;
 
 
 
-// // é€’å¢è¿ç®—ç¬¦é‡è½½
+// // µİÔöÔËËã·ûÖØÔØ
 // class MyInterger { 
 //     friend ostream& operator<<(ostream& cout, MyInterger m); 
 // public: 
@@ -167,7 +167,7 @@ using namespace std;
 //     int num; 
 // }; 
 
-// // é‡è½½å·¦ç§»è¿ç®—ç¬¦,è¾“å‡ºå¯¹è±¡ 
+// // ÖØÔØ×óÒÆÔËËã·û,Êä³ö¶ÔÏó 
 // ostream& operator<<(ostream& cout, MyInterger m) {
 //     cout << m.num; 
 //     return cout; 
@@ -183,8 +183,8 @@ using namespace std;
 // }
 
 
-// // é‡ç½®å‰ç½® ++ 
-// // é€’å¢è¿ç®—ç¬¦é‡è½½
+// // ÖØÖÃÇ°ÖÃ ++ 
+// // µİÔöÔËËã·ûÖØÔØ
 // class MyInterger { 
 //     friend ostream& operator<<(ostream& cout, MyInterger m); 
 // public: 
@@ -199,7 +199,7 @@ using namespace std;
 //     int num; 
 // }; 
 
-// // é‡è½½å·¦ç§»è¿ç®—ç¬¦,è¾“å‡ºå¯¹è±¡ 
+// // ÖØÔØ×óÒÆÔËËã·û,Êä³ö¶ÔÏó 
 // ostream& operator<<(ostream& cout, MyInterger m) {
 //     cout << m.num << endl;  
 //     return cout; 
@@ -215,8 +215,8 @@ using namespace std;
 // }
 
 
-// é‡ç½®å‰ç½® ++ 
-// // é€’å¢è¿ç®—ç¬¦é‡è½½
+// ÖØÖÃÇ°ÖÃ ++ 
+// // µİÔöÔËËã·ûÖØÔØ
 // class MyInterger { 
 //     friend ostream& operator<<(ostream& cout, MyInterger m); 
 // public: 
@@ -230,7 +230,7 @@ using namespace std;
 // private: 
 //     int num; 
 // }; 
-// // é‡è½½å·¦ç§»è¿ç®—ç¬¦,è¾“å‡ºå¯¹è±¡ 
+// // ÖØÔØ×óÒÆÔËËã·û,Êä³ö¶ÔÏó 
 // ostream& operator<<(ostream& cout, MyInterger m) {
 //     cout << m.num << endl;  
 //     return cout; 
@@ -248,22 +248,22 @@ using namespace std;
 
 
 
-// // é€’å¢è¿ç®—ç¬¦é‡è½½
-// // é‡è½½åç½® ++
+// // µİÔöÔËËã·ûÖØÔØ
+// // ÖØÔØºóÖÃ ++
 // class MyInterger { 
 //     friend ostream& operator<<(ostream& cout, MyInterger m); 
 // public: 
 //     MyInterger() {
 //         num = 0; 
 //     }  
-//     // é‡è½½åç½® ++ ,void operator++(int)  intä»£è¡¨å ä½å‚æ•°,å¯ä»¥ç”¨äºåŒºåˆ†å‰ç½®å’Œåç½®é€’å¢
+//     // ÖØÔØºóÖÃ ++ ,void operator++(int)  int´ú±íÕ¼Î»²ÎÊı,¿ÉÒÔÓÃÓÚÇø·ÖÇ°ÖÃºÍºóÖÃµİÔö
 //     void operator++(int) {
 //         num++; 
 //     }
 // private: 
 //     int num; 
 // }; 
-// // é‡è½½å·¦ç§»è¿ç®—ç¬¦,è¾“å‡ºå¯¹è±¡ 
+// // ÖØÔØ×óÒÆÔËËã·û,Êä³ö¶ÔÏó 
 // ostream& operator<<(ostream& cout, MyInterger m) {
 //     cout << m.num << endl;  
 //     return cout; 
@@ -280,15 +280,15 @@ using namespace std;
 
 
 
-// // é€’å¢è¿ç®—ç¬¦é‡è½½
-// // é‡è½½åç½® ++
+// // µİÔöÔËËã·ûÖØÔØ
+// // ÖØÔØºóÖÃ ++
 // class MyInterger { 
 //     friend ostream& operator<<(ostream& cout, MyInterger m); 
 // public: 
 //     MyInterger() {
 //         num = 0; 
 //     }  
-//     // é‡è½½åç½® ++ ,void operator++(int)  intä»£è¡¨å ä½å‚æ•°,å¯ä»¥ç”¨äºåŒºåˆ†å‰ç½®å’Œåç½®é€’å¢
+//     // ÖØÔØºóÖÃ ++ ,void operator++(int)  int´ú±íÕ¼Î»²ÎÊı,¿ÉÒÔÓÃÓÚÇø·ÖÇ°ÖÃºÍºóÖÃµİÔö
 //     MyInterger operator++(int) { 
 //         MyInterger temp = *this; 
 //         num++; 
@@ -297,7 +297,7 @@ using namespace std;
 // private: 
 //     int num; 
 // }; 
-// // é‡è½½å·¦ç§»è¿ç®—ç¬¦,è¾“å‡ºå¯¹è±¡ 
+// // ÖØÔØ×óÒÆÔËËã·û,Êä³ö¶ÔÏó 
 // ostream& operator<<(ostream& cout, MyInterger m) {
 //     cout << m.num << endl;  
 //     return cout; 
@@ -315,46 +315,103 @@ using namespace std;
 
 
 
-// é€’å¢è¿ç®—ç¬¦çš„é‡è½½
-class MyInteger {
-public: 
-    MyInteger() {
-        m_num = 0; 
-    } 
+// // µİÔöÔËËã·ûµÄÖØÔØ
+// class MyInteger {
+// public: 
+//     MyInteger() {
+//         m_num = 0; 
+//     } 
 
-    // é‡è½½++è¿ç®—ç¬¦ 
-    // å‰ç½®++ 
-    // è¿”å›å¼•ç”¨æ˜¯ä¸ºäº†å¯¹ä¸€ä¸ªå¯¹è±¡è¿›è¡Œæ“ä½œ
-    MyInteger& operator++() {
-        m_num++; 
+//     // ÖØÔØ++ÔËËã·û 
+//     // Ç°ÖÃ++ 
+//     // ·µ»ØÒıÓÃÊÇÎªÁË¶ÔÒ»¸ö¶ÔÏó½øĞĞ²Ù×÷
+//     MyInteger& operator++() {
+//         m_num++; 
+//         return *this; 
+//     }
+
+//     // ÖØÔØºóÖÃ++
+//     MyInteger operator++(int) {
+//         MyInteger temp = *this; 
+//         m_num++;  
+//         return temp; 
+//     }
+
+
+//     int m_num;  
+
+//     MyInteger(int x = 0) : m_num(x) {} 
+// }; 
+
+
+// // ÖØÔØ×óÒÆÔËËã·û
+// ostream& operator<<(ostream& cout, MyInteger s) {
+//     cout << s.m_num << endl; 
+//     return cout; 
+// } 
+
+// int main() {
+
+//     MyInteger s(46); 
+//     cout << ++s << endl; 
+//     return 0; 
+// }
+
+
+
+
+class Person {
+public: 
+    Person(int age) {
+        m_Age = new int(age); 
+    } 
+    int *m_Age;  
+
+    ~Person() {
+        if (m_Age != NULL) {
+            delete m_Age;  
+            m_Age = NULL; 
+        }
+    }
+
+
+    Person& operator=(Person& p) {
+        // ±àÒëÆ÷ÊÇÌá¹©Ç³¿½±´
+        // m_Age = p.m_Age; 
+
+
+        // Ó¦¸ÃÏÈÅĞ¶ÏÊÇ·ñÓĞÊôĞÔÔÚ¶ÑÇø, Èç¹ûÓĞÏÈÊÍ·Å¸É¾», È»ºóÔÙÉî¿½±´
+        if (m_Age == NULL) {
+            delete m_Age; 
+            m_Age = NULL;  
+        }  
+
+        // Éî¿½±´
+        m_Age = new int(*p.m_Age);  
         return *this; 
     }
-
-    // é‡è½½åç½®++
-    MyInteger operator++(int) {
-        MyInteger temp = *this; 
-        m_num++;  
-        return temp; 
-    }
-
-
-    int m_num;  
-
-    MyInteger(int x = 0) : m_num(x) {} 
 }; 
 
+void test01() {
+    Person p1(18);  
 
-// é‡è½½å·¦ç§»è¿ç®—ç¬¦
-ostream& operator<<(ostream& cout, MyInteger s) {
-    cout << s.m_num << endl; 
-    return cout; 
-} 
+    Person p2(20);  
 
-int main() {
+    Person p3(30); 
 
-    MyInteger s(46); 
-    cout << ++s << endl; 
+    p1 = p2;   // Ö¸ÏòÁËÍ¬Ò»¿éÄÚ´æ¿Õ¼ä »áÔì³ÉÖØ¸´ÊÍ·Å  
+
+    p1 = p2 = p3; 
+    cout << "p1µÄÄêÁäÎª " << *p1.m_Age << endl; 
+    cout << "p2µÄÄêÁäÎª " << *p2.m_Age << endl; 
+    cout << "p3µÄÄêÁäÎª " << *p3.m_Age << endl; 
+}  
+
+int main() { 
+
+
+    test01(); 
+
+
     return 0; 
 }
-
-
