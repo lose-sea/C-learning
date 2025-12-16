@@ -46,7 +46,6 @@ void allocateSpace(teacher t[], int len) {
             t[i].stu[j].score = random; 
         }
     } 
-
 }
  
 void printStruct(teacher t[], int len) {
