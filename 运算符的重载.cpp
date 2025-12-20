@@ -360,58 +360,96 @@ using namespace std;
 
 
 
-class Person {
-public: 
-    Person(int age) {
-        m_Age = new int(age); 
-    } 
-    int *m_Age;  
+// class Person {
+// public: 
+//     Person(int age) {
+//         m_Age = new int(age); 
+//     } 
+//     int *m_Age;  
 
-    ~Person() {
-        if (m_Age != NULL) {
-            delete m_Age;  
-            m_Age = NULL; 
-        }
-    }
-
-
-    Person& operator=(Person& p) {
-        // 编译器是提供浅拷贝
-        // m_Age = p.m_Age; 
+//     ~Person() {
+//         if (m_Age != NULL) {
+//             delete m_Age;  
+//             m_Age = NULL; 
+//         }
+//     }
 
 
-        // 应该先判断是否有属性在堆区, 如果有先释放干净, 然后再深拷贝
-        if (m_Age == NULL) {
-            delete m_Age; 
-            m_Age = NULL;  
-        }  
+//     Person& operator=(Person& p) {
+//         // 编译器是提供浅拷贝
+//         // m_Age = p.m_Age; 
 
-        // 深拷贝
-        m_Age = new int(*p.m_Age);  
-        return *this; 
+
+//         // 应该先判断是否有属性在堆区, 如果有先释放干净, 然后再深拷贝
+//         if (m_Age == NULL) {
+//             delete m_Age; 
+//             m_Age = NULL;  
+//         }  
+
+//         // 深拷贝
+//         m_Age = new int(*p.m_Age);  
+//         return *this; 
+//     }
+// }; 
+
+// void test01() {
+//     Person p1(18);  
+
+//     Person p2(20);  
+
+//     Person p3(30); 
+
+//     p1 = p2;   // 指向了同一块内存空间 会造成重复释放  
+
+//     p1 = p2 = p3; 
+//     cout << "p1的年龄为 " << *p1.m_Age << endl; 
+//     cout << "p2的年龄为 " << *p2.m_Age << endl; 
+//     cout << "p3的年龄为 " << *p3.m_Age << endl; 
+// }  
+
+// int main() { 
+
+
+//     test01(); 
+
+
+//     return 0; 
+// }
+
+
+
+
+// 函数调用运算符的重载
+// class print {
+// public: 
+//     // 重载函数调用运算符
+//     void operator()(string str) {
+//         cout << str << endl; 
+//     }
+// };  
+
+
+// int main() {
+//     print print; 
+//     print("hello world"); 
+//     return 0; 
+// } 
+
+
+class ADD {
+public : 
+    int operator()(int num1, int num2) {
+        return num1 + num2; 
     }
 }; 
 
-void test01() {
-    Person p1(18);  
 
-    Person p2(20);  
+int main() {
 
-    Person p3(30); 
+    ADD myadd; 
+    int ret = myadd(199, 288); 
+    cout << ret << endl; 
 
-    p1 = p2;   // 指向了同一块内存空间 会造成重复释放  
-
-    p1 = p2 = p3; 
-    cout << "p1的年龄为 " << *p1.m_Age << endl; 
-    cout << "p2的年龄为 " << *p2.m_Age << endl; 
-    cout << "p3的年龄为 " << *p3.m_Age << endl; 
-}  
-
-int main() { 
-
-
-    test01(); 
-
-
+    cout << ADD()(100, 100) << endl; 
     return 0; 
 }
